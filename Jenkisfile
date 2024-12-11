@@ -1,0 +1,20 @@
+pipline {
+  agent any{
+  stages {
+    stage("Build"){
+      steps  {
+        echo 'Building the app' 
+      }
+    }
+   stage("Test"){
+      steps  {
+        echo 'Tesing the app' 
+      }
+    }
+   stage("Deploy"){
+      steps  {
+        echo 'Deploying the app' 
+      }
+    }
+  }
+}
